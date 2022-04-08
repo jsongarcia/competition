@@ -22,6 +22,6 @@ Route::post('/management/employee/', [EmployeeController::class, 'saveEmp']);
 
 Route::post('/management/employee/{id}/salary', [PayrollHandler::class, 'getSalary']);
 Route::post('/management/employee/{id}/timein', [PayrollHandler::class, 'timeIn']);
-Route::post('/management/employee/{id}/timeout', [PayrollHandler::class, 'timeIn']);
+Route::post('/management/employee/{id}/timeout', [PayrollHandler::class, 'timeOut']);
 Route::post('/management/employee/{id}/leave', [PayrollHandler::class, 'leave']);
 Route::get('/test/{date}', [PayrollHandler::class, 'test']);
