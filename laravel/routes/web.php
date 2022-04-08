@@ -13,6 +13,7 @@ use App\Http\Controllers\PayrollHandler;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function(){return "Bulacan State University - Team 1";});
 Route::get('/management/employee', [EmployeeController::class, 'getEmp']);
 Route::get('/management/employee/{id}', [EmployeeController::class, 'getEmpById']);
 Route::delete('/management/employee/{id}', [EmployeeController::class, 'delEmpById']);
